@@ -1,6 +1,4 @@
-:root{
-    --img-width: 33%;
-}
+
 
 *{
     box-sizing: border-box;
@@ -30,19 +28,16 @@ body{
     color: white;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 6vw, 3rem);
     font-family: logotext;
 }
 #logo-bg > img{
     height: 130px;
-    width: auto;
 }
 #logo-bg > h1{
-    margin-top: 1.2rem;
+    margin-top: 1.3rem;
 }
 #leaf-img{
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 #form-background{
@@ -54,13 +49,13 @@ body{
     width: 100%;
     height: 30vh;
     background-color: white;
-    box-shadow: inset 0px 1px 11px 0px rgba(0,0,0,0.81);
+    box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.81);
     padding-left: 3rem;
     padding-top: 1rem;
     color: #333;
 }
 #form-space > div{
-    width: 40%;
+    width: 33%;
     display: inline-block;
     margin: 0.4rem;
     color: #666;
@@ -70,8 +65,9 @@ body{
     height: 35vh;
 }
 #top-space > p{
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
     font-weight: 400;
+    color: #333;
 }
 #top-space{
     padding: 3rem;
@@ -81,11 +77,15 @@ body{
     margin-top: 1rem;
 }
 input{
-    width: 250px;
+    width: 100%;
     height: 1.8rem;
-    border: 1px solid #aaa;
     border-radius: 3px;
     display: block;
+    padding: 0.2rem;
+    border: 1px solid #aaa;
+}
+input:focus{
+    box-shadow: 0px 5px 15px -6px #000000;
 }
 button[type="submit"]{
     width: 200px;
@@ -104,8 +104,8 @@ button[type="submit"]{
     color: darkolivegreen;
     text-decoration: none;
     font-weight: bold;
-
 }
+
 @font-face {
     font-family: logotext;
     src: url("Norse-Bold.otf") format("opentype");
