@@ -55,23 +55,57 @@ body{
     height: 30vh;
     background-color: white;
     box-shadow: inset 0px 1px 11px 0px rgba(0,0,0,0.81);
+    padding-left: 3rem;
+    padding-top: 1rem;
+    color: #333;
+}
+#form-space > div{
+    width: 40%;
+    display: inline-block;
+    margin: 0.4rem;
+    color: #666;
+    font-size: 0.8rem;
 }
 #top-space, #bottom-space{
     height: 35vh;
 }
 #top-space > p{
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 #top-space{
-    padding: 4rem;
+    padding: 3rem;
     padding-top: 6rem;
 }
 #top-space > p:last-child{
     margin-top: 1rem;
 }
+input{
+    width: 250px;
+    height: 1.8rem;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    display: block;
+}
+button[type="submit"]{
+    width: 200px;
+    height: 3rem;
+    background-color: darkolivegreen;
+    border-radius: 10px;  
+    margin-bottom: 1rem; 
+    color: white;
+    border: none;
+}
+#bottom-space{
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+#bottom-space > p > a{
+    color: darkolivegreen;
+    text-decoration: none;
+    font-weight: bold;
 
-
+}
 @font-face {
     font-family: logotext;
     src: url("Norse-Bold.otf") format("opentype");
