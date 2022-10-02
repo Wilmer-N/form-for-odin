@@ -1,3 +1,78 @@
-h1{
-    color: red;
+:root{
+    --img-width: 33%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(229, 227, 227);
+    display: flex;
+}
+
+#img-div{
+    height: 100vh;
+    width: 33%;
+    display: inline-block;
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo-bg{
+    width: 100%;
+    height: 150px;
+    margin-top: calc(35vh - 150px);
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: logotext;
+}
+#logo-bg > img{
+    height: 130px;
+    width: auto;
+}
+#logo-bg > h1{
+    margin-top: 1.2rem;
+}
+#leaf-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#form-background{
+    width: 67%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+#form-space{
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+    box-shadow: inset 0px 1px 11px 0px rgba(0,0,0,0.81);
+}
+#top-space, #bottom-space{
+    height: 35vh;
+}
+#top-space > p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+#top-space{
+    padding: 4rem;
+    padding-top: 6rem;
+}
+#top-space > p:last-child{
+    margin-top: 1rem;
+}
+
+
+@font-face {
+    font-family: logotext;
+    src: url("Norse-Bold.otf") format("opentype");
 }
