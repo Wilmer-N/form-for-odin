@@ -15,7 +15,7 @@
         </div>
     </div>
     <div id="form-background">
-        <form method="post" action="README.md">
+        <form method="post" action="">
         <div id="top-space">
             <p>This is not a real online service! You know you need something like this in your life to realize your deepest dreams. </p>
             <p>Sign up now to get started.</p>
@@ -23,18 +23,19 @@
         </div>
         <div id="form-space">
             <h2>Lets do this!</h1>
-<div><label for="first">FIRST NAME</label><input title="Please enter a real name" pattern="[A-Za-z]{1, 30}" required id="first" name="first" type="text"></div>
-<div><label for="surname">LAST NAME</label><input  title="Please enter a real name" pattern="[A-Za-z]{1, 30}" required id="surname" name="surname" type="text"></div>
-<div><label for="email">EMAIL</label><input title="something@somthin.whatever" required id="email" name="email" type="email"></div>
-<div><label for="phone">PHONE NUMBER</label><input pattern="[0-9]{10}" required id="phone" name="phonenumber" type="text"></div>
-<div><label for="password">PASSWORD</label><input required id="password" name="password" type="password"></div>
+<div><label for="first">FIRST NAME</label><input title="Please enter a real name" pattern="[A-Za-z]{1, 30}" id="first" name="first" type="text"></div>
+<div><label for="surname">LAST NAME</label><input  title="Please enter a real name" pattern="[A-Za-z]{1, 30}" id="surname" name="surname" type="text"></div>
+<div><label for="email">EMAIL</label><input title="something@somthin.whatever" id="email" name="email" type="email"></div>
+<div><label for="phone">PHONE NUMBER</label><input pattern="[0-9]{10}" id="phone" name="phonenumber" type="text"></div>
+<div><label for="password">PASSWORD</label><input  required id="password" name="password" type="password"></div>
 <div><label for="confirm">CONFIRM PASSWORD</label><input required id="confirm" name="confirmed" type="password"></div>
         </div> 
         <div id="bottom-space">
-            <button type="submit">Create Account</button>
+            <button type="submit" onclick="confirmPassword()">Create Account</button>
             <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Sign in</a></p>
         </div>
         </form>
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>

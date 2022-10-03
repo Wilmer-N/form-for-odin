@@ -6,6 +6,14 @@
     padding: 0;
 
 }
+/* removes default style*/
+input{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
 body{
     background-color: rgb(229, 227, 227);
     display: flex;
