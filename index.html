@@ -23,11 +23,11 @@
         </div>
         <div id="form-space">
             <h2>Lets do this!</h1>
-<div><label for="first">FIRST NAME</label><input title="Please enter a real name" pattern="[A-Za-z]{1, 30}" id="first" name="first" type="text"></div>
-<div><label for="surname">LAST NAME</label><input  title="Please enter a real name" pattern="[A-Za-z]{1, 30}" id="surname" name="surname" type="text"></div>
-<div><label for="email">EMAIL</label><input title="something@somthin.whatever" id="email" name="email" type="email"></div>
-<div><label for="phone">PHONE NUMBER</label><input pattern="[0-9]{10}" id="phone" name="phonenumber" type="text"></div>
-<div><label for="password">PASSWORD</label><input  required id="password" name="password" type="password"></div>
+<div><label for="first">FIRST NAME</label><input required title="Please enter a real name" pattern="[A-Za-z]{1, 30}" id="first" name="first" type="text"></div>
+<div><label for="surname">LAST NAME</label><input required title="Please enter a real name" pattern="[A-Za-z]{1, 30}" id="surname" name="surname" type="text"></div>
+<div><label for="email">EMAIL</label><input required title="something@somthin.whatever" id="email" name="email" type="email"></div>
+<div><label for="phone">PHONE NUMBER</label><input required title="should be 10 digits long" pattern="[0-9]{10}" id="phone" name="phonenumber" type="text"></div>
+<div><label for="password">PASSWORD</label><input pattern="(?=.*\d).{8,}" title="Should be at least 8 charachters long and contain a number" required id="password" name="password" type="password"></div>
 <div><label for="confirm">CONFIRM PASSWORD</label><input required id="confirm" name="confirmed" type="password"></div>
         </div> 
         <div id="bottom-space">
